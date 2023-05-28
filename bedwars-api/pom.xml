@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>bedwars-api</artifactId>
-    <version>${parent.version}</version>
+    <version>${project.parent.version}</version>
 
     <repositories>
         <repository>
@@ -35,19 +35,21 @@
             <artifactId>spigot-api</artifactId>
             <version>1.8.8-R0.1-SNAPSHOT</version>
             <scope>system</scope>
-            <systemPath>${parent.basedir}/lib/WindSpigot.jar</systemPath>
+            <systemPath>${project.basedir}/lib/WindSpigot.jar</systemPath>
         </dependency>
     </dependencies>
     <build>
         <plugins>
             <plugin>
                 <artifactId>maven-deploy-plugin</artifactId>
+                <version>3.1.1</version>
                 <configuration>
                     <skip>false</skip>
                 </configuration>
             </plugin>
             <plugin>
                 <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.5.0</version>
                 <configuration>
                     <skip>false</skip>
                 </configuration>

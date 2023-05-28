@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>bedwars-plugin</artifactId>
     <packaging>jar</packaging>
-    <version>${parent.version}</version>
+    <version>${project.parent.version}</version>
 
     <pluginRepositories>
         <pluginRepository>
@@ -22,10 +22,6 @@
     </pluginRepositories>
 
     <repositories>
-        <repository>
-            <id>simonsators-repo</id>
-            <url>https://simonsator.de/repo/</url>
-        </repository>
         <repository>
             <id>citizens</id>
             <url>https://repo.citizensnpcs.co/</url>
@@ -61,6 +57,10 @@
         <repository>
             <id>alessioDP-releases</id>
             <url>https://repo.alessiodp.com/releases/</url>
+        </repository>
+        <repository>
+            <id>simonsators-repo</id>
+            <url>https://simonsator.de/repo/</url>
         </repository>
         <repository>
             <id>andrei1058-releases</id>
@@ -153,7 +153,7 @@
             <artifactId>spigot-api</artifactId>
             <version>1.8.8-R0.1-SNAPSHOT</version>
             <scope>system</scope>
-            <systemPath>${parent.basedir}/lib/WindSpigot.jar</systemPath>
+            <systemPath>${project.basedir}/lib/WindSpigot.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>me.clip</groupId>

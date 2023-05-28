@@ -11,7 +11,7 @@
     </parent>
 
     <artifactId>resetadapter-slime</artifactId>
-    <version>${parent.version}</version>
+    <version>${project.parent.version}</version>
 
     <repositories>
         <repository>
@@ -36,7 +36,7 @@
             <artifactId>spigot-api</artifactId>
             <version>1.8.8-R0.1-SNAPSHOT</version>
             <scope>system</scope>
-            <systemPath>${parent.basedir}/lib/WindSpigot.jar</systemPath>
+            <systemPath>${project.basedir}/lib/WindSpigot.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.grinderwolf</groupId>
@@ -50,6 +50,7 @@
         <plugins>
             <plugin>
                 <artifactId>maven-deploy-plugin</artifactId>
+                <version>3.1.1</version>
                 <configuration>
                     <skip>true</skip>
                 </configuration>
